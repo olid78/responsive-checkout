@@ -1,0 +1,158 @@
+.material-icons {
+    color: $form-gray;
+}
+
+
+.form__input {
+    text-indent: 40px;
+    
+}
+
+.input__container {
+    position: relative;
+    width: 100%;
+    @include respond-below(md) {
+      width: 90%;
+      place-self: flex-start;
+    }
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.form__shipping {
+    padding: 16px;
+    gap: 8px;
+    @include respond-below(md) {
+      padding: 8px;
+      width: 80%;
+      place-self: center;
+      place-items: center;
+    }
+}
+
+.form__contact {
+    padding: 16px;
+    gap: 8px;
+    width: 100%;
+    @include respond-below(md) {
+        padding: 8px;
+        width: 80%;
+        place-self: center;
+      }
+}
+
+.form__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark-gray;
+}
+
+.form__label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: $medium-gray;
+    place-self: flex-start;
+    
+}
+
+.form--row {
+    gap: 32px;
+    @include respond-below(md) {
+      gap: 16px;
+      width: 95%;
+      place-self: flex-start;
+    }
+}
+
+.input__container--postal {
+    @include respond-below(md) {
+      width: 100%;
+    }
+}
+
+.form__label--checkbox {
+    color: $medium-gray;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.form__checkbox__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+    @include respond-below(md) {
+      width: 90%;
+    }
+    
+}
+
+input {
+   border-radius: 12px;
+   border: 1px solid $form-gray; 
+   height: 56px;
+   width: 100%;
+
+}
+
+.checkbox {
+     width: auto;
+     place-self: flex-start;
+    
+}
+
+select {
+    border-radius: 12px;
+    border: 1px solid $form-gray; 
+    height: 56px;
+    width: 100%;
+    color: $form-gray;
+    
+}
+
+option {
+    color: $dark-gray;
+    
+}
+
+.form__country--col {
+    gap: 8px;
+}
+
+.form__postCode__wrapper {
+    gap: 8px;
+}
+
+
+
+.checkbox {
+    height: auto;
+}
+
+.form__button {
+    border: none;
+    background-color: $orange;
+    padding: 16px 45px;
+    border-radius: 12px;
+    color: #fff;
+    place-self: flex-end;
+    cursor: pointer;
+    &:hover {
+        transform: translateY(-5%);
+    }
+}
+
+
+
